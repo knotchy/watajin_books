@@ -1,0 +1,58 @@
+hr{
+  height: 2px;
+  background: $Lightgray;
+  border: none;
+}
+.contents{
+  @include clearfix;
+  position: relative;
+  .home{
+    &__top{
+      width: 100vw;
+      background: $Lightgray;
+      &-image{
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    &__middle{
+      margin: 20px 0px;
+      padding: 40px 0px;
+      text-align: center;
+      font-size: 24px;
+    }
+    &__bottom{
+      margin-top: 40px;
+      &-accese{
+        padding: 0 20px 0;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      &-text{
+        .address{
+          padding: 0 25px 25px;
+          font-size: 16px;
+        }
+      }
+      &-map{
+
+        .accese-map{
+          margin: 0 auto;
+          display: block;
+          width: 90vw;
+          height: 250px;
+          object-fit: cover;
+          object-position: 0 0;
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  width: 100vw;
+  padding: 40px 0 10px;
+  &_right{
+    text-align: right;
+  }
+}

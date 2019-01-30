@@ -1,0 +1,44 @@
+.header{
+  padding: 20px 0;
+  margin: 0 auto 0;
+  text-align: center;
+  .h-title{
+    font-size: 28px;
+    text-shadow: 0.5px 0.5px 2px $Lightgray;
+    padding-bottom: 10px;
+  }
+  .page-title{
+    &-link{
+      @include clearfix;
+      width: 400px;
+      margin: 12px auto 5px;
+    }
+    &-list{
+      line-height: 16px;
+      padding: 10px 10px 0 25px;
+      float: left;
+      text-shadow: 0.5px 0.5px 2px $Lightgray;
+      a.nav{
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        color: $Black;
+      }
+      a.nav:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 2px;
+        background: $Powderblue;
+        transform: scale(0, 1);
+        transform-origin: center;
+        transition: 0.3s;
+      }
+      a.nav:hover:before {
+        transform: scale(1);
+      }
+    }
+  }
+}

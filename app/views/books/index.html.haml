@@ -1,23 +1,24 @@
-%p#notice= notice
-%h1 Books
-%table
-  %thead
-    %tr
-      %th Title
-      %th Value
-      %th Release
-      %th{:colspan => "3"}
-  %tbody
-    - @books.each do |book|
-      %tr
-        %td= book.title
-        %td= book.value
-        %td= book.release
-        %td= link_to 'Show', book
-        %td= link_to 'Edit', edit_book_path(book)
-        %td= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' }
-%br/
-= link_to 'New Book', new_book_path
+= render "nav-bar"
+.contents
+  .home__top
+    = image_tag( "sample.jpg", alt: "watajin-syoten", class: "home__top-image")
+  .home__middle
+    %span えんま通りの小さな書店
+    %br
+    %br 小さなお店ですが絵本や女性向けの本を中心に
+    いろんなジャンルを置いています
 
-%h3 search
+  .home__bottom
+    %h3.home__bottom-accese アクセス
+    %hr
+    .home__bottom-text
+      .address
+        %br 〒945-0051 新潟県柏崎市東本２－５－２２
+        %br バス停「東本町２丁目」降りてすぐ
+        %br [営業時間] 9:30 ～ 19:00 日曜日は１８時
+        %br [定休日] 不定休
+        %br tel: 0257-22-7300
+        %br e-mail: watajin-books@watajin.com
+    .home__bottom-map
+      = image_tag( "access-map.jpg", alt: "syoten-accese", class: "accese-map")
 
