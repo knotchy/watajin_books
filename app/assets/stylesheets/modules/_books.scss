@@ -35,12 +35,13 @@ hr{
         }
       }
       &-map{
-
-        .accese-map{
+        margin-top: 5px;
+        padding: 0 20px;
+        %iframe{
           margin: 0 auto;
           display: block;
           width: 90vw;
-          height: 250px;
+          height: 350px;
           object-fit: cover;
           object-position: 0 0;
         }
