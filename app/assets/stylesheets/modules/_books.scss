@@ -36,12 +36,11 @@ hr{
       }
       &-map{
         margin-top: 5px;
-        padding: 0 20px;
-        %iframe{
+        iframe{
           margin: 0 auto;
           display: block;
-          width: 90vw;
-          height: 350px;
+          width: calc(100vw - 40px);
+          height: 420px;
           object-fit: cover;
           object-position: 0 0;
         }
